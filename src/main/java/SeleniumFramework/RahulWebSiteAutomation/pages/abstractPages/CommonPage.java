@@ -8,7 +8,7 @@ import java.time.Duration;
 public abstract class CommonPage {
 
     protected WebDriver driver;
-    private WebDriverWait wait;
+    protected WebDriverWait wait;
 
     public CommonPage(WebDriver driver) {
         this.driver = driver;

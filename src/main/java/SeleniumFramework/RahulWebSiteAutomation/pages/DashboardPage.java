@@ -1,5 +1,5 @@
 package SeleniumFramework.RahulWebSiteAutomation.pages;
 
-public class HomePage {
+public class DashboardPage {
 
 }
