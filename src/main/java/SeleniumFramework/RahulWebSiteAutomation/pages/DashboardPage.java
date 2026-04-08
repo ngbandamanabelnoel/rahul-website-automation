@@ -1,5 +1,11 @@
 package SeleniumFramework.RahulWebSiteAutomation.pages;
 
-public class DashboardPage {
+import SeleniumFramework.RahulWebSiteAutomation.pages.abstractPages.CommonDashboardPage;
+import org.openqa.selenium.WebDriver;
 
+public class DashboardPage extends CommonDashboardPage {
+
+    public DashboardPage(WebDriver driver) {
+        super(driver);
+    }
 }
