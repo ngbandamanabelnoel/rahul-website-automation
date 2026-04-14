@@ -1,4 +1,4 @@
-package abstract_pages;
+package common_pages;
 
 import pages_objects.CartPage;
 import pages_objects.DashboardPage;

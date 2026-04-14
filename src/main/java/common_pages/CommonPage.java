@@ -1,4 +1,4 @@
-package abstract_pages;
+package common_pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
