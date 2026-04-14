@@ -16,14 +16,27 @@ public class LoginSteps extends CommonSteps {
     public void logged_in_with_incorrect_username_and_password(String username, String password) {
         this.landingPage.enterCredentials(username,password);
     }
+    @Given("logged in with correct username {string} and  password {string}")
+    public void logged_in_with_correct_username_and_password(String username, String password) {
+        this.landingPage.enterCredentials(username,password);
+    }
 
     @When("clicked on login button.")
     public void clicked_on_login_button() {
         this.landingPage.validateCredentials();
     }
-    @Then("I get the mesage {string} on display.")
-    public void i_get_the_mesage_on_display(String message) {
+
+
+    @Then("I get the message {string} on display.")
+    public void i_get_the_message_on_display(String message) {
         Assert.assertTrue(this.landingPage.getToastMessageContent().equalsIgnoreCase(message));
+        this.quitTest();
+    }
+
+    @Then("I redirect on that link page {string}.")
+    public void i_redirect_on_that_link_page(String urlHomePage) throws InterruptedException {
+        Thread.sleep(3000);
+        Assert.assertTrue(this.landingPage.getUrlPage().equalsIgnoreCase(urlHomePage));
         this.quitTest();
     }
 

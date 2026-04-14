@@ -7,7 +7,7 @@ Feature: Get logged into the web site
   Scenario Outline: Positive tests for connexion
     Given logged in with correct username <username> and  password <password>
     When clicked on login button.
-    Then I get the mesage "Login Successfully" on display.
+    Then I redirect on that link page "https://rahulshettyacademy.com/client/#/dashboard/dash".
 
     Examples:
       | username 					| password   |
@@ -17,7 +17,7 @@ Feature: Get logged into the web site
   Scenario Outline: Negative tests for connexion
     Given logged in with incorrect username <username> and  password <password>
     When clicked on login button.
-    Then I get the mesage "Incorrect email or password." on display.
+    Then I get the message "Incorrect email or password." on display.
 
     Examples:
       | username 					 | password    |

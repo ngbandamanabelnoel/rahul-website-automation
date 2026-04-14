@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.Duration;
+
 public class LandingPage extends CommonPage {
 
     @FindBy(css = ".btn1")
@@ -49,4 +51,8 @@ public class LandingPage extends CommonPage {
         return driver.findElement(toastMessageBy).getText();
     }
 
+    public String getUrlPage(){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        return driver.getCurrentUrl();
+    }
 }
