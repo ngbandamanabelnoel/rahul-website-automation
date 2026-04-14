@@ -1,6 +1,6 @@
 package pages_objects;
 
-import abstract_pages.CommonPage;
+import common_pages.CommonPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

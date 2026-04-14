@@ -1,6 +1,6 @@
 package pages_objects;
 
-import abstract_pages.CommonDashboardPage;
+import common_pages.CommonDashboardPage;
 import org.openqa.selenium.WebDriver;
 
 public class ConfirmationPage extends CommonDashboardPage {
